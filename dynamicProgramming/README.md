@@ -43,5 +43,11 @@ def fib_tab(n):
 - Widely used in AI, optimization, and systems design.
 - Forms the backbone of algorithms in graph theory, string matching, and resource allocation.
 
+## Dynamic Programming Mind Map
+
+A visual overview of the key concepts in Dynamic Programming:
+
+![Dynamic Programming Mind Map](https://copilot.microsoft.com/th/id/BCO.86584586-1dd7-4c6d-ae59-9c4a2de6e051.png)
+
 
    
