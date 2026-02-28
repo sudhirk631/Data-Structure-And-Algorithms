@@ -5,9 +5,14 @@ Instead of recomputing solutions repeatedly, DP stores results and reuses them, 
 ## Key Concepts
 - Optimal Substructure: A problem has an optimal substructure if its solution can be constructed from solutions to subproblems.
 - Overlapping Subproblems: DP is effective when the same subproblems are solved multiple times.
-- Memoization vs Tabulation: 
-    - Memoization: Top-down approach using recursion + caching.
-    - Tabulation: Bottom-up approach using iteration + table filling.
+- There are two appraches to dymanic programming: Memoization and Tabulation.
+    - Top-Down approach or Memoization: Approach using recursion + caching.
+          - Before making any recursive call, we first check if the memoization table already has solution for it.
+          - After the recursive call is over, we store the solution in the memoization table.
+    - Bottom-Up approach or Tabulation: Approach using iteration + table filling.
+          - We write an iterative solution (avoid recursion overhead) and build the solution in bottom-up manner.
+          - We use a dp table where we first fill the solution for base cases and then fill the remaining entries of the table using recursive formula.
+          - We only use recursive formula on table entries and do not make recursive calls.
 
 ## Classic Example: Fibonacci Numbers
 The naive recursive solution for Fibonacci numbers has exponential time complexity. DP reduces it to linear time.
